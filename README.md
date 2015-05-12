@@ -16,15 +16,15 @@ You will need to fill out some information about your app including two URLs tha
 
 When your app has been created you will need to click on the 'manage keys and access tokens' link.
 
-![manage access tokens](manage_access_tokens.png)
+![manage access tokens](docs/manage_access_tokens.png)
 
 Now click on the 'create my access token' button.
 
-![create access token button](create_access_token_button.png)
+![create access token button](docs/create_access_token_button.png)
 
 Now you will see a screen that contains 4 credentials that you will need to copy into this project.
 
-![credentials for config file](credentials_for_config_file.png)
+![credentials for config file](docs/credentials_for_config_file.png)
 
 Copy the 4 credentials into a file called `.env` in the root of this project.  The file should look like this:
 
