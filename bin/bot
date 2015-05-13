@@ -12,4 +12,12 @@ client = Twitter::REST::Client.new do |config|
   config.access_token_secret = ENV["TWITTER_ACCESS_TOKEN_SECRET"]
 end
 
-client.update("I'm tweeting with @gem!")
+# topics = ["@holdy", "#uvrb"]
+# client.search(:track => topics.join(",")) do |object|
+#   client.update(object.text + "#urug") if object.is_a?(Twitter::Tweet)
+# end
+client.search("#holdytest").take(10).each do |tweet|
+  new_tweet = (" #urug 👏 👏 👏")
+  client.update(new_tweet[0..139], {in_reply_to_status: tweet})
+  # puts tweet.text
+end
